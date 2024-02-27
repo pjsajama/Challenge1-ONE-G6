@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto - Challenge ONE</title>
+    <link rel="icon" href="img/Logo-ico.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado"> <!--este es el logo-->
+        <img class="logo" src="img/Logo.png" alt="logo">
+    </header>
+    <main>
+
+        <section class="seccion1"> <!--primera seccion-->
+            <div class="contenedor-caja-texto"> <!--caja para ingresar el texto-->
+                <textarea id="caja-texto" class="caja-texto" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="alerta"> <!--advertencia del texto a ingresar-->
+                
+                <p> <img src="img/bi_exclamation-circle-fill.png" alt="alerta"> Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedor-botones"> <!--botones para encriptar y desencriptar-->
+                <input type="button" class="btn-encriptar" value="Encriptar" onclick="btnEncriptar()">
+                <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="btnDesencriptar()">
+            </div>
+        </section>
+
+        <section class="seccion2"> <!--segunda seccion-->
+            <div class="contenedor-resultado">
+                <!--<p id="texto-resultado" class="texto-resultado"></p>-->
+                <textarea id="texto-resultado" class="texto-resultado"></textarea>
+            </div>
+            <div class="contenedor-munieco"> <!--contenedor de la imagen del muñeco-->
+                <img src="img/Muñeco.png" alt="Muñeco">
+            </div>
+            <div class="contenedor-parrafo">
+                <h3>Ningún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar" value="Copiar" onclick="btnCopiar()">
+            </div>
+            <div class="contenedor-resultado">
+                <p id="texto-resultado" class="texto-resultado"></p>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/app.js"></script>
+    <footer class="pie-pagina">
+        <p>Diseñado por <span>Pedro Javier Sajama</span></p>
+    </footer>
+</body>
+</html>
