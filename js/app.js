@@ -1,7 +1,7 @@
-let campo_texto = document.getElementById("caja-texto");
-let campo_mensaje = document.getElementById("texto-resultado");
+const campo_texto = document.getElementById("caja-texto");
+const campo_mensaje = document.getElementById("texto-resultado");
 
-let matriz_code = [ ["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"] ];
+const matriz_code = [ ["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"] ];
 
 function btnEncriptar() {
     let texto = encriptar(campo_texto.value);
