@@ -3,35 +3,24 @@ body{
     font-family: "Inter", sans-serif;
     font-weight: 400;
 }
-
 .logo{
     padding-top: 40px;
     padding-left: 40px;
 }
-
 main{
     display: flex;
+    /*flex-direction: row;*/
+    justify-content: center;
     margin-bottom: 50px;
     margin-left: 80px;
 }
 .secciones{
+    display: flex;
+    flex-direction: column;
 }
 #seccion1{
+    width: 60%;
 }
-#seccion2{
-    background: white;
-
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 32px;
-    color: #0A3871;
-    margin-left: 40px;
-    margin-top: 40px;
-    padding-left: 40px;
-    width: 500px;
-
-}
-
 .caja-texto{ 
     border: none;
     background: none;
@@ -46,65 +35,37 @@ main{
 ::placeholder{
     color: #0A3871;
 }
-
 .caja-texto:focus{
     outline: none;
 }
-
-
-
-.texto-resultado{
-    background: none;
-    background-image: url("/img/Muneco.png");
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 32px;
-    color: #0A3871;
-    margin-left: 40px;
-    margin-top: 40px;
-    padding-left: 40px;
-    width: 400px;
-    height: auto;
-    
+.alerta {
+    padding: 20px;
+    margin-left: 40px;   
+    font-size: 12px;
+    vertical-align: middle;
 }
-.texto-resultado:focus{
-    outline: none;
-}
-
-.cartel1{
-    color: #343A40;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28.8px;
-    text-align: center;
-}
-
-.cartel2{
-    color: #495057;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
+.ico-alerta {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
 }
 .contenedor-botones{
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    justify-content: space-around;
+    padding: 10px;
 }
-
 .btn-encriptar{
     background: #0A3871;
     border: 1px solid #0A3871;
     color: white;
     border-radius: 24px;
     padding: 24px;
-    /*grid-gap: 8px;*/   
     cursor: pointer;
     height: 67px;
     width: 320px;
     font-size: 16px;
     line-height: 19.36px;
 }
-
 .btn-desencriptar{
     background: #E9ECF8;
     border: 1px solid #0A3871;
@@ -117,7 +78,63 @@ main{
     font-size: 16px;
     line-height: 19.36px;
 }
-
+#seccion2{
+    background: white;
+    border: none;
+    border-radius: 32px;
+    color: #0A3871;
+    margin-left: 32px;
+    margin-top: 32px;
+    padding-left: 40px;
+    height: auto;
+    width: 30%;
+}
+.texto-resultado{
+    font-family: "Inter", sans-serif;
+    color: #495057;
+    font-size: 24px;
+    line-height: 36px;
+    background: none;
+    border: none;
+    border-radius: 32px;
+    color: #0A3871;
+    margin-left: 32px;
+    margin-top: 32px;
+    padding-left: 10px;
+    width: 600px;
+    height: auto;
+}
+.texto-resultado:focus{
+    outline: none;
+}
+.muneco{
+    width: 60%;
+    margin: auto;
+}
+.cartel1{
+    width: 250px;
+    display: block;
+    margin: auto;
+    color: #343A40;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    text-align: center;
+}
+.cartel2{
+    width: 300px;
+    display: block;
+    margin: auto;
+    color: #495057;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.contenedor-copiar{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
 .btn-copiar{
     background: #E9ECF8;
     border: 1px solid #0A3871;
@@ -130,181 +147,29 @@ main{
     font-size: 16px;
     line-height: 19.36px;
 }
-
-.alerta {
-    padding: 20px;
-    margin-left: 40px;   
-    font-size: 12px;
-    vertical-align: middle;
-}
-
-.ico-alerta {
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-}
-
 .pie-pagina {
     width: 100%;
     padding: 20px;
     margin: 20px;
     height: 70px;
     font-size: 12px;
-    font-weight: 400;
     text-align: center;
-    font-size: 1 rem;
-}
-
-span {
-    font-weight: 700;
-}
-
-/*body {
-    background: #F3F5FC;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-}
-
-header {
-    width: 100%;
-    height: 70px;
-}
-
-.logo {
-    width: 30px;
-    height: 40px;
-    padding-top: 40px;
-    padding-left: 40px;
-}
-
-.contenedor-caja-texto {
-    margin: 40px;
-    padding: 40px;
-    border: none;
-}
-
-textarea::placeholder {
-    font-family: "Inter", sans-serif;
-    color: #0A3871;
-    font-size: 32px;
-}
-
-.caja-texto {
-    color:#0A3871;
-    font-size: 32px;
-}
-
-.encabezado {
-}
-.logo {
-}
-.seccion1 {
-    width: 60%;
-    display: inline-block;
-}
-.contenedor-caja-texto {
-}
-.caja-texto {
-    margin: 0 0 0 40px;
-    padding: 40px;
-    width: 400px;
-    height: auto;
-    background: transparent;
-    border-color: transparent;
-}
-.alerta {
-    padding: 20px;
-    margin-left: 40px;   
-    font-size: 12px;
-    font-weight: 400;
-    vertical-align: middle;
-}
-.ico-alerta {
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-}
-.contenedor-botones {
-}
-.btn-encriptar {
-    width: 320px;
-    padding: 20px 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #E9ECF8;
-    background: #0A3871;
-    border:none;
-    border-radius: 24px;
-}
-.btn-desencriptar {
-    width: 320px;
-    padding: 20px 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #0A3871;
-    background: #E9ECF8;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-}
-.seccion2 {
-    width: 40%;
-    padding: 20px;
-    margin: 40px;
-    border: none;
-    background: white;
-    width: 400;
-    border-radius: 32px;
-
-}
-.contenedor-resultado {
-}
-.texto-resultado {
-    margin: 0 0 0 40px;
-    padding: 40px;
-    width: 400px;
-    height: auto;
-    background: transparent;
-    border-color: transparent;
-}
-.contenedor-munieco {
-    text-align: center;
-}
-.contenedor-parrafo h3 {
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    padding: 20px;
-}
-.contenedor-parrafo p {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    padding: 20px;
-}
-.contenedor-copiar {
-    text-align: center;
-}
-.btn-copiar {
-    width: 320px;
-    padding: 20px 0;
-    font-size: 16px;
-    font-weight: 400;
-    color: #0A3871;
-    background: #E9ECF8;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-}
-.pie-pagina {
-    width: 100%;
-    padding: 20px;
-    margin: 20px;
-    height: 70px;
-    font-size: 12px;
-    font-weight: 400;
-    text-align: center;
-    font-size: 1 rem;
 }
 span {
     font-weight: 700;
+    font-size: 16px;
 }
-*/
+/*celulares*/
+@media only screen and (max-width:400px) {
+    .contenedor-botones{
+        display: flex;
+        justify-content: baseline;
+        margin-top: 10px;
+    }
+    .muneco{
+        display: none;
+    }
+}
+/*tablet*/
+@media screen and (min-width:400px) and (max-width:800px) {
+}
