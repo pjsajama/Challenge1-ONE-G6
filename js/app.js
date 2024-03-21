@@ -10,15 +10,19 @@ const txt_no_encontrado3 = document.getElementById("cartel2");
 const matriz_code = [ ["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"] ];
 
 function btnEncriptar() {
-    let texto = encriptar(campo_texto.value.toLowerCase());
-    campo_mensaje.value = texto;
-    mostrar();
+    if (campo_texto.value != "") {
+        let texto = encriptar(campo_texto.value.toLowerCase());
+        campo_mensaje.value = texto;
+        mostrar();
+    }
 }
 
 function btnDesencriptar() {
-    let texto = desencriptar(campo_texto.value.toLowerCase());
-    campo_mensaje.value = texto;
-    mostrar();
+    if (campo_texto.value != "") {
+        let texto = desencriptar(campo_texto.value.toLowerCase());
+        campo_mensaje.value = texto;
+        mostrar();
+    }
 }
 
 function encriptar(fraseEncriptada) {

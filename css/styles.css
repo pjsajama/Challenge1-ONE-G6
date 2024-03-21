@@ -165,67 +165,33 @@ span {
     font-weight: 700;
     font-size: 16px;
 }
-/*celulares*/
-@media only screen and (max-width:400px) {
+@media screen and (max-width:480px) {
     main{
         display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-    #seccion1{
-        flex: 1 0 140px;
-    }
-    #seccion2{
-        flex: 1 0 140px;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
     .muneco{
         display: none;
+        visibility: hidden;
+        height: 0;
     }
-    .caja-texto{
-        margin-left: 10px;
+    .caja-texto, .alerta, .secciones, .contenedor-botones, .texto-resultado, #seccion1, #seccion2, .pie-pagina {
+        width: 90%;
+        padding: 0 10px;
+        margin: 0 10px;
     }
-    .contenedor-botones{
-        display: flex;
-        flex-flow: row wrap;
-        gap: 8px;
-    }
-    .btn-encriptar{
-        flex: 1 0 140px;
-    }
-    .btn-desencriptar{
-        flex: 1 0 140px;
-    }
-}
-/*tablet*/
-@media screen and (min-width:400px) and (max-width:800px) {
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-    #seccion1{
-        flex: 1 0 140px;
-    }
-    #seccion2{
-        flex: 1 0 140px;
-    }
-    .muneco{
-        display: none;
-    }
-    .caja-texto{
-        margin-left: 10px;
+    .caja-texto, .texto-resultado{
+        height: 50vh;
     }
     .contenedor-botones{
         display: flex;
-        flex-flow: row wrap;
-        gap: 8px;
+        flex-direction: column;
     }
-    .btn-encriptar{
-        flex: 1 0 140px;
+    .btn-encriptar, .btn-desencriptar{
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
     }
-    .btn-desencriptar{
-        flex: 1 0 140px;
-    }
-
-
 }
